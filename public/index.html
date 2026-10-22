@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar | Almoxarifado</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="pagina-login">
+  <header class="cabecalho">
+    <div class="logo">🫧 Almoxarifado</div>
+    <nav class="menu" aria-label="Navegação principal">
+      <a href="index.html" class="ativo" aria-current="page">Entrar</a>
+    </nav>
+  </header>
+
+  <main class="login-main">
+    <div class="cartao caixa-login">
+      <div class="icone" aria-hidden="true">🫧</div>
+      <h1>Almoxarifado</h1>
+      <p class="subtitulo">Entre com seu e-mail e senha</p>
+
+      <form id="form-login">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="seuemail@exemplo.com" required>
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" placeholder="Digite sua senha" required>
+
+        <button type="submit" class="botao">Entrar</button>
+        <a href="cadastro.html" class="botao botao-secundario link-cadastro">
+          Criar conta
+        </a>
+      </form>
+
+      <p id="mensagem" class="mensagem" aria-live="polite"></p>
+    </div>
+  </main>
+
+  <footer class="rodape">Almoxarifado © 2026 | Feito por Steffany</footer>
+  <script src="js/comum.js"></script>
+  <script src="js/login.js"></script>
+
+</body>
+</html>

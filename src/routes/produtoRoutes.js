@@ -1,0 +1,18 @@
+const express = require('express');
+const { deletar } = require('../controllers/produtoController');
+
+
+const router = express.Router();
+
+const { cadastrar, listar } = require('../controllers/produtoController');
+const auth = require('../middlewares/auth');
+const permitir = require('../middlewares/checkRole');
+
+
+router.post('/produtos', auth, cadastrar);
+
+router.get('/produtos', auth, listar);
+router.delete('/produtos/:id', auth, permitir('administrador'), deletar);
+
+
+module.exports = router;
